@@ -5,6 +5,20 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-kapt'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Android-project\\Chat-App-Android\\keys\\keys.jks')
+            storePassword '0987654321'
+            keyAlias 'key'
+            keyPassword '0987654321'
+        }
+        release {
+            storeFile file('C:\\Android-project\\Chat-App-Android\\keys\\keys.jks')
+            storePassword '0987654321'
+            keyAlias 'key'
+            keyPassword '0987654321'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
